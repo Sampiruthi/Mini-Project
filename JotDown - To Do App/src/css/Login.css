@@ -1,0 +1,95 @@
+.page {
+  background-image: url("https://i.pinimg.com/736x/31/01/2d/31012de9e884a94766331be0418a5cd1.jpg");
+  background-position: center center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.abc {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Login-Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email, .password, .role, .lusername {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+#e, #p, #role, #u {
+  margin-top: 3px;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: black;
+  transition: border-color 0.3s;
+  font-size: 14px;
+}
+
+input[type="text"], input[type="password"], select, input[type="lusername"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus, input[type="lusername"]:focus {
+  border-color: #6f2c91;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.move {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.move a {
+  color: #6f2c91;
+  text-decoration: none;
+}
+
+.move a:hover {
+  text-decoration: underline;
+}
+
+span {
+  cursor: pointer;
+  color: #6f2c91;
+}

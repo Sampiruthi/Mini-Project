@@ -1,0 +1,105 @@
+.calendar * {
+  color: black; /* Applies to all child elements of the calendar */
+}
+.calendar-container {
+  margin-top: 50px;
+  height:500px;
+  width:700px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.react-calendar__tile--disabled {
+  visibility: hidden; /* Hides disabled tiles */
+  pointer-events: none; /* Prevents interaction */
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.calendar {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.event-input {
+  width: calc(100% - 20px);
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+.event-list {
+  margin-top: 100px;
+}
+
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.event-actions button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.event-actions button.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.event-actions button.delete-button {
+  background-color: #f44336;
+}
+
+.event-actions button.delete-button:hover {
+  background-color: #d32f2f;
+}
+.react-calendar__navigation {
+  display: flex;
+  justify-content: center; /* Centers the header */
+  align-items: center; /* Vertically aligns items */
+}
+
+.react-calendar__navigation__label {
+  flex: 1; /* Ensures the label takes space */
+  text-align: center;
+  font-size: 16px; /* Adjust size as needed */
+  font-weight: bold; 
+}
+
+.react-calendar__navigation__arrow {
+  flex: 0; /* Keeps the arrows at a minimal width */
+}

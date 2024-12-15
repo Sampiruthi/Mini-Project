@@ -1,0 +1,217 @@
+.budget-page {
+    width: 90%;
+    max-width: 800px;
+    background-color: #f9f9f9; /* Lighter background for contrast */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333; /* Darker text for better readability */
+    text-align: center;
+}
+
+/* Month selection styles */
+.month-select {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.month-select input[type="month"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Lighter border */
+    background-color: #ffffff; /* White background for input */
+    color: #333; /* Darker text for input */
+    max-width: 250px;
+    transition: border-color 0.3s;
+}
+
+.month-select input[type="month"]:focus {
+    border-color: #007bff; /* Bootstrap blue on focus */
+}
+
+/* Transaction form styles */
+.transaction-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.transaction-form input,
+.transaction-form select,
+.transaction-form button {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Lighter border */
+    background-color: #ffffff; /* White background */
+    color: #333; /* Darker text */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.transaction-form input[type="text"],
+.transaction-form input[type="number"],
+.transaction-form select {
+    flex: 1;
+    min-width: 150px;
+}
+
+.transaction-form button {
+    background-color: #007bff; /* Bright blue for buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.transaction-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Transaction list styles */
+.transaction-lists {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.transaction-list {
+    flex: 1;
+    background: #f1f1f1; /* Lighter background for transaction lists */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+}
+
+.transaction-list.income {
+    border-left: 5px solid #28a745; /* Green for income */
+}
+
+.transaction-list.expense {
+    border-left: 5px solid #dc3545; /* Red for expenses */
+}
+
+.transaction-list h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333; /* Darker text for headings */
+    border-bottom: 2px solid #ccc; /* Lighter border */
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.transaction-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e9ecef; /* Light grey for list items */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.transaction-list li:hover {
+    background-color: #dee2e6; /* Slightly darker on hover */
+}
+
+.transaction-list .total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+    border-top: 2px solid #ccc; /* Lighter border */
+    padding-top: 10px;
+    color: #333; /* Darker text */
+}
+
+/* Balance display styles */
+.budget-page h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 15px;
+    border-radius: 6px;
+    color: #28a745; /* Green text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .transaction-form {
+        flex-direction: column;
+    }
+
+    .transaction-lists {
+        flex-direction: column;
+    }
+
+    .transaction-list {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .transaction-form input[type="text"],
+    .transaction-form input[type="number"],
+    .transaction-form select,
+    .transaction-form button {
+        flex: none;
+        width: 100%;
+    }
+}
+
+/* Transaction actions styles */
+.transaction-actions {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 10px; /* Add some space above the buttons */
+}
+
+.transaction-actions button {
+    padding: 6px 12px;
+    font-size: 14px; /* Increase font size for better readability */
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px; /* Consistent spacing between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.transaction-actions button:hover {
+    transform: scale(1.05);
+}
+
+.transaction-actions button:nth-child(1) {
+    background-color: #007bff; /* Bright blue for Edit */
+    color: #fff;
+}
+
+.transaction-actions button:nth-child(2) {
+    background-color: #dc3545; /* Red for Delete */
+    color: #fff;
+}
+
+.transaction-actions button:nth-child(1):hover {
+    background-color: #0056b3; /* Darker blue for Edit on hover */
+}
+
+.transaction-actions button:nth-child(2):hover {
+    background-color: #c82333; /* Darker red for Delete on hover */
+}

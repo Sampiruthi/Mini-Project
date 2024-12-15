@@ -1,0 +1,110 @@
+.Signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url("https://i.pinimg.com/736x/31/01/2d/31012de9e884a94766331be0418a5cd1.jpg");
+    background-position: center center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-abc {
+    background-color: #fff; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 5px solid rgba(255, 255, 255, 0);
+}
+
+.heading-signup {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #6f2c91;
+}
+
+.Login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.lusername, .email, .password {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #6f2c91;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.signup-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #6f2c91;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a2374;
+}
+
+.move {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.move a {
+    color: #6f2c91;
+    text-decoration: none;
+}
+
+.move a:hover {
+    text-decoration: underline;
+}
+
+span {
+    cursor: pointer;
+    color: #6f2c91;
+}

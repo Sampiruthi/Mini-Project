@@ -1,0 +1,117 @@
+/* :root {
+  --primary-color: #f54275;
+  --secondary-color: #f5a9b8;
+  --background-color: #fefbf3;
+  --accent-color: #f7c6e0;
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--text-color);
+}
+
+.recipe-book {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--background-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 20px;
+  box-shadow: 0 6px 12px var(--shadow-color);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.recipe-book-header {
+  margin-bottom: 40px;
+  background-color: var(--accent-color);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.recipe-book-header h1 {
+  font-family: var(--font-title);
+  font-size: 3em;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px var(--shadow-color);
+  margin: 20px;
+  padding: 25px;
+  width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px var(--shadow-color);
+}
+
+.recipe-card img.recipe-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.recipe-card h2 {
+  color: var(--primary-color);
+  font-family: var(--font-title);
+  font-size: 2em;
+  margin: 20px 0 15px;
+}
+
+.recipe-card h3 {
+  color: var(--secondary-color);
+  font-family: var(--font-body);
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+}
+
+.recipe-card ul, .recipe-card ol {
+  text-align: left;
+  margin: 10px 0;
+  padding-left: 20px;
+  color: var(--text-color);
+  font-size: 1.1em; 
+  line-height: 1.8; 
+}
+
+.recipe-card ul li, .recipe-card ol li {
+  margin-bottom: 10px;
+}
+
+.recipe-card ul li::marker, .recipe-card ol li::marker {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .recipe-card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-card {
+    width: 100%;
+  }
+} */
